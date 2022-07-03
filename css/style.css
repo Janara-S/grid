@@ -1,0 +1,167 @@
+body {
+    background-color: #C0DBD9;
+}
+
+main {
+    width: 1200px;
+    height: 100px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.btn {
+    background-color: #7FAFF6;
+    padding: 38px ;
+    margin-bottom: 15px;
+}
+
+.wrapper {
+    display: flex;
+  grid-gap: 15px;
+  grid-template-areas: 2fr 3fr 1fr;
+  
+
+}
+div {
+ 
+   
+}
+.grid * {
+	background-color:  #8AD191;
+	text-align: center;
+	font-family: sans-serif;
+	color: #fff;
+    font-size: 53px;
+    padding-top: 70px;
+   
+}
+
+/* Сетка */
+
+.grid {
+	display: grid;
+    background-color: #B3F95A;
+	grid-template-columns: 2fr 3fr 1fr;
+	grid-auto-rows: 200px;
+	grid-gap: 15px;
+    text-align: center;
+    
+}
+
+
+
+.grid > div:nth-child(4) {
+	grid-column: 1 / 3;
+}
+.grid2 {
+    margin-top: 15px;
+    background-color: #88B5BF;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-auto-rows: 260px;
+    padding: 0 15px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    align-items: center;
+	
+}
+.item {
+    background-color: #0D89B0;
+    margin: 30px 15px;
+    height: 200px;
+}
+.footer {
+    background-color: #7FAFF6;
+    padding: 38px ;
+    margin-bottom: 15px;
+    margin-top: 100px;
+}
+
+
+
+
+.popup-checkbox, .popup {
+    display: none;
+  }
+  
+  .popup {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+  
+  .popup:before {
+    display: block;
+    content: ' ';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: .5;
+  }
+  
+  .popup-content {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    font-size: 53px;
+    z-index: 2;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 20px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 150px;
+  }
+  
+  .popup-shower {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: 
+    #A5C7F9;
+    padding: 8px 15px;
+    border-radius: 5px;
+  }
+  
+  .popup-shower:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .popup-closer {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    color: #fff;
+    
+    font-size: 30px;
+    border: none;
+    display: block;
+    width: 30px;
+    height: 32px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #7FAFF6;
+  }
+  
+  .popup-checkbox:checked + .popup {
+    opacity: 1;
+    display: block;
+  }
